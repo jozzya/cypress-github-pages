@@ -1,6 +1,7 @@
 # Cypress functional testing 
 
 ## Pre-requisites
+
 npm
 
 ## Installation
@@ -10,6 +11,10 @@ Run `npm install` to bring in the cypress dependencies
 ## How to run
 
 `./node_modules/.bin/cypress open` - This will open up the electron browser.
+
+## Video documentation of Cypress
+
+https://youtu.be/QP1I982XYtg
 
 ## Recommended IDE
 
