@@ -1,4 +1,4 @@
-name: Cypress Cypress Dashboard
+name: Cypress Dashboard
 on:
   push:
     branches: [ main ]
