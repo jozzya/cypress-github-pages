@@ -10,7 +10,7 @@ on:
     branches: [ main ]
 
 jobs:
-  cypress-test:
+  cypress-github-pages:
     name: Run on Chrome 83
     runs-on: ubuntu-18.04
     container: cypress/browsers:node12.18.0-chrome83-ff77
