@@ -35,22 +35,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # pass the project ID from the secrets through environment variable
           CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
-
-    firefox:
-      name: Cypress run on firefox and push onto Cypress
-      runs-on: ubuntu-latest
-      container:
-        image: cypress/browsers:node12.16.1-chrome80-ff73
-        options: --user 1001
-      steps:
-        - uses: actions/checkout@v2
-        - uses: cypress-io/github-action@v2
-          with:
-            browser: firefox
-          env:
-            # pass the Dashboard record key as an environment variable
-            CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-            # pass GitHub token to allow accurately detecting a build vs a re-run build
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            # pass the project ID from the secrets through environment variable
-            CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
