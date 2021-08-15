@@ -23,3 +23,11 @@ https://youtu.be/QP1I982XYtg
 
 When writing the tests, I recommend using Visual Studio - https://code.visualstudio.com/Download
 Support for Cypress is provided out of the box.
+
+## Remote dashboard
+
+https://dashboard.cypress.io/projects/v8vg4q/
+
+## Github Pages
+
+https://jozzya.github.io/cypress-github-pages/
