@@ -11,7 +11,7 @@ on:
 
 jobs:
   cypress-github-pages:
-    name: Run on Chrome 83
+    name: Run Cypress on Github Actions then deploy onto Pages
     runs-on: ubuntu-18.04
     container: cypress/browsers:node12.18.0-chrome83-ff77
     steps:
@@ -27,6 +27,7 @@ jobs:
 
       - name: Copy test execution videos and screenshots
         run: |
+          rm -rf public
           mkdir public
           cp -r cypress/videos public/videos
           cp -r cypress/screenshots public/screenshots
