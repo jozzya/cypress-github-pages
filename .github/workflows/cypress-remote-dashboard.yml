@@ -1,4 +1,4 @@
-name: Cypress remote dashboard
+name: Cypress Cypress Dashboard
 on:
   push:
     branches: [ main ]
@@ -6,7 +6,7 @@ on:
     branches: [ main ]
 jobs:
   cypress-run:
-    name: Cypress run and push onto the dashboards
+    name: Cypress run and push onto the Cypress dashboard
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
