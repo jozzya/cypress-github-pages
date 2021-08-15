@@ -4,12 +4,24 @@
   "scripts": {
       "test:chrome": "cypress run --browser chrome",
       "combine:report": "mochawesome-merge ./mochawesome-report/*.json -o index.json",
-      "generate:report": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html"
+      "generate:report": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html",
+      "types": "tsc --noEmit",
+      "precypress:open": "yarn predev:cognito:ci",
+      "cypress:open": "cypress open",
+      "cypress:open:mobile": "cypress open --config viewportWidth=375,viewportHeight=667",
+      "cypress:run": "cypress run",
+      "cypress:run:mobile": "cypress run --config viewportWidth=375,viewportHeight=667",
+      "test": "yarn cypress:open",
+      "test:headless": "yarn cypress:run",
+      "test:api": "yarn cypress:run --spec 'cypress/tests/api/*'",
+      "prestart:empty": "yarn db:seed:empty",
+      "prebuild": "yarn types",
   },
   "devDependencies": {
       "cypress": "4.9.0",
       "mochawesome": "6.1.1",
       "mochawesome-merge": "4.1.0",
-      "mochawesome-report-generator": "5.1.0"
+      "mochawesome-report-generator": "5.1.0",
+      "ts-node": "10.0.0"
   }
 }
