@@ -1,5 +1,5 @@
 [![Generate Cypress Github Page](https://github.com/jozzya/cypress-github-pages/actions/workflows/cypress-github-pages-report.yml/badge.svg)](https://github.com/jozzya/cypress-github-pages/actions/workflows/cypress-github-pages-report.yml)
-[![Cypress Dashboard](https://github.com/jozzya/cypress-github-pages/actions/workflows/cypress-dashboard.yml/badge.svg)](https://github.com/jozzya/cypress-github-pages/actions/workflows/cypress-dashboard.yml)
+[![Cypress Dashboard](https://github.com/jozzya/cypress-github-pages/actions/workflows/cypress-dashboard.yml/badge.svg?branch=main)](https://github.com/jozzya/cypress-github-pages/actions/workflows/cypress-dashboard.yml)
 [![Cypress Remote Dashboard Status](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/detailed/v8vg4q&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/v8vg4q/runs)
 # Cypress functional testing 
 
