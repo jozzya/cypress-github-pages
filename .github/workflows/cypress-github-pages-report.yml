@@ -28,6 +28,12 @@ jobs:
         run: npm run test:chrome
         continue-on-error: true
 
+      - name: Merge test results into one
+        run: npm run report:merge
+      
+      - name: Generate HTML report
+        run: npm run report:generate
+
       - name: Copy test execution videos and screenshots
         run: |
           mkdir public
