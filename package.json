@@ -8,7 +8,7 @@
     "test": "cypress run",
     "test:chrome": "cypress run --browser chrome",
     "report:merge": "mochawesome-merge cypress/results/json/*.json -o index.json",
-    "report:generate": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html"
+    "report:generate": "marge index.json --reportDir public_temp --assetsDir public_temp/assets --reportPageTitle index.html"
   },
   "devDependencies": {
     "cypress": "^4.1",
