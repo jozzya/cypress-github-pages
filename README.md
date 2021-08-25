@@ -9,7 +9,7 @@ npm
 
 ## Installation
 
-Run `npm install` to bring in the cypress dependencies..
+Run `npm install` to bring in the cypress dependencies.
 
 ## How to run
 
