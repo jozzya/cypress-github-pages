@@ -1,11 +1,19 @@
 {
+  "name": "cypress-report",
+  "version": "1.0.0",
+  "description": "Simple Cypress project",
+  "author": "Joz Ahmed",
+  "main": "index.js",
   "scripts": {
+    "test": "cypress run",
     "test:chrome": "cypress run --browser chrome",
-    "combine:report": "mochawesome-merge ./mochawesome-report/*.json -o index.json",
-    "generate:report": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html"
+    "report:merge": "mochawesome-merge cypress/results/json/*.json > index.json",
+    "report:generate": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html"
   },
   "devDependencies": {
     "cypress": "4.9.0",
+    "cypress-multi-reporters": "^1.4.0",
+    "mocha": "^8.0.1",
     "mochawesome": "6.1.1",
     "mochawesome-merge": "4.1.0",
     "mochawesome-report-generator": "5.1.0"
