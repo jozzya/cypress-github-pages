@@ -111,3 +111,7 @@ dist
 *.png
 *.mp4
 public
+
+# Ignore files with secrets
+cypress/chrome-recordings/*.json
+cypress/e2e/chrome-recordings/*.cy.js

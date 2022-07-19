@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-07-19T14:22:05.082Z",
+    "end": "2022-07-19T14:22:05.772Z",
+    "duration": 690,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "268079ef-d91e-4dc9-82b3-56164591f1df",
+      "title": "",
+      "fullFile": "cypress/e2e/chrome-recordings/Demo.cy.js",
+      "file": "cypress/e2e/chrome-recordings/Demo.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "74d4c500-e367-41ec-8b91-eb8407675937",
+          "title": "Demo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "tests Demo",
+              "fullTitle": "Demo tests Demo",
+              "timedOut": null,
+              "duration": 573,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"videos/Demo.cy.js.mp4\"",
+              "code": "cy.viewport(1440, 150);\ncy.visit(\"https://lgov-dev.glatest.org.uk/\");\ncy.visit(\"https://lgov-dev.glatest.org.uk/user/login\");\ncy.get(\"#main-content > div.container > div:nth-child(2) > p > a\").click();\ncy.get(\"#edit-name\").dblclick();\ncy.get(\"#edit-name\").type(\"root@london.gov.uk\");\ncy.get(\"#edit-pass\").dblclick();\ncy.get(\"#edit-pass\").type(\"Unbounded-Wrist8-Trapdoor-Unengaged-Identity-Reptilian\");\ncy.type(\"{enter}\");\ncy.get(\"#toolbar-item-administration-tray > nav > div.toolbar-menu-administration > ul > li.menu-item.menu-item--expanded.hover-intent > a\").click();\ncy.get(\"#block-seven-mainpagecontent > ul > li:nth-child(20) > a\").click();\ncy.get(\"#block-seven-mainpagecontent > table.webform-forms.sticky-enabled.responsive-enabled.sticky-table > tbody > tr:nth-child(2) > td:nth-child(1) > a\").click();\ncy.get(\"#edit-first-name\").click();\ncy.get(\"#edit-first-name\").type(\"Test first name\");\ncy.get(\"#edit-last-name\").click();\ncy.get(\"#edit-last-name\").type(\"last name\");\ncy.get(\"#edit-phone-number\").click();\ncy.get(\"#edit-phone-number\").type(\"01234567890\");\ncy.get(\"#edit-email\").click();\ncy.get(\"#edit-email\").type(\"test\");\ncy.get(\"#edit-email\").type(\"test@testing.com\");\ncy.get(\"#edit-i-am-a\").click();\ncy.get(\"#edit-i-am-a\").type(\"member_of_public\");\ncy.get(\"#edit-where-do-you-live\").click();\ncy.get(\"#edit-where-do-you-live\").type(\"Barking and Dagenham\");\ncy.get(\"#edit-have-you-contacted-us-about-this-issue-before\").click();\ncy.get(\"#edit-have-you-contacted-us-about-this-issue-before\").type(\"Yes\");\ncy.get(\"#edit-i-want-to\").click();\ncy.get(\"#edit-i-want-to\").type(\"make_a_suggestion\");\ncy.get(\"#edit-subject\").click();\ncy.get(\"#edit-subject\").type(\"test\");\ncy.get(\"#edit-your-message\").click();\ncy.get(\"#edit-your-message\").type(\"this is the message\");\ncy.get(\"#edit-actions-submit\").click();\ncy.get(\"#block-mainpagecontent > div > div:nth-child(1) > div > p:nth-child(1)\").click();",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://lgov-dev.glatest.org.uk/\n\nThe response we received from your web server was:\n\n  > 500: Internal Server Error\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://lgov-dev.glatest.org.uk/\n\nThe response we received from your web server was:\n\n  > 500: Internal Server Error\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at http://localhost:57537/__cypress/runner/cypress_runner.js:156624:84\n    at visitFailedByErr (http://localhost:57537/__cypress/runner/cypress_runner.js:155945:12)\n    at http://localhost:57537/__cypress/runner/cypress_runner.js:156604:13\n    at tryCatcher (http://localhost:57537/__cypress/runner/cypress_runner.js:13012:23)\n    at Promise._settlePromiseFromHandler (http://localhost:57537/__cypress/runner/cypress_runner.js:10947:31)\n    at Promise._settlePromise (http://localhost:57537/__cypress/runner/cypress_runner.js:11004:18)\n    at Promise._settlePromise0 (http://localhost:57537/__cypress/runner/cypress_runner.js:11049:10)\n    at Promise._settlePromises (http://localhost:57537/__cypress/runner/cypress_runner.js:11125:18)\n    at _drainQueueStep (http://localhost:57537/__cypress/runner/cypress_runner.js:7719:12)\n    at _drainQueue (http://localhost:57537/__cypress/runner/cypress_runner.js:7712:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:57537/__cypress/runner/cypress_runner.js:7728:5)\n    at Async.drainQueues (http://localhost:57537/__cypress/runner/cypress_runner.js:7598:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:57537/__cypress/tests?p=cypress/e2e/chrome-recordings/Demo.cy.js:102:8)",
+                "diff": null
+              },
+              "uuid": "ba7c5dcc-5b64-49f8-a2dc-4745e2be346f",
+              "parentUUID": "74d4c500-e367-41ec-8b91-eb8407675937",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "ba7c5dcc-5b64-49f8-a2dc-4745e2be346f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 573,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

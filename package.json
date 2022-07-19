@@ -6,12 +6,13 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress run",
+    "open": "cypress open",
     "test:chrome": "cypress run --browser chrome",
     "report:merge": "mochawesome-merge cypress/results/json/*.json -o index.json",
     "report:generate": "marge index.json --reportDir public_temp --assetsDir public_temp/assets --reportPageTitle index.html"
   },
   "devDependencies": {
-    "cypress": "^4.1",
+    "cypress": "^10.3",
     "cypress-multi-reporters": "^1.4.0",
     "mocha": "^8.0.1",
     "mochawesome": "6.1.1",
